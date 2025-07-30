@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    volumes:
+      - ../data:/app/data
+      - ../chroma_db:/app/chroma_db
+    environment:
+      - FLASK_ENV=development
+  chromadb:
+    image: chromadb/chroma:latest
+    ports:
+      - "8001:8001"
+    volumes:
+      - ../chroma_db:/chroma/chroma
