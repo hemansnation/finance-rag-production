@@ -21,6 +21,23 @@ package the flask app and chromadb into docker containers
 
 
 Phase 3: CI/CD Automation (github actions)
+automate testing and deployment with github actions
+
+- ci.yml
+- test rag
+
+
 Phase 4: ML Orchestration (Airflow)
+automate the indexing pipeline with airflow
+
+dags - Directed Acyclic Graph - workflow of your pipeline
+
+
 Phase 5: Monitoring & Observability (Grafana and Prometheus)
+
+add prometheus and grafana(vizualization) for monitoring
+
+- docker-compose.yml
+- prometheus.yml
+
 Phase 6: Infrastructure as Code (AWS Deployment)
